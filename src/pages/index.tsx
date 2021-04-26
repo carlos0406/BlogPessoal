@@ -1,9 +1,11 @@
-import { Title } from "../styles/styles";
+import { Header } from "../components/Header";
+import GlobalStyles from "../styles/global";
 
 export default function Home() {
   return (
-    <Title>
-      Blog pessoal
-    </Title>
-  )
+    <div>
+      <GlobalStyles />
+      <Header />
+    </div>
+  );
 }
