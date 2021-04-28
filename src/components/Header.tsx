@@ -1,8 +1,16 @@
 import { Container } from "../styles/componentsStyles/HeaderStyles";
 import { FaLinkedinIn, FaCode } from "react-icons/fa";
 import { DiGithubBadge } from "react-icons/di";
+import Switch from "react-switch";
+import { useContext } from "react";
+import { ThemeContext } from "styled-components";
 
-export function Header() {
+type HeaderProps = {
+  toggleTheme: () => void;
+};
+
+export function Header({ toggleTheme }: HeaderProps) {
+  const { colors, title } = useContext(ThemeContext);
   return (
     <Container>
       <img src="https://github.com/carlos0406.png" alt="Nome da pessoa " />
@@ -10,6 +18,17 @@ export function Header() {
       <FaCode size={50} color="white" />
 
       <div>
+        <Switch
+          onChange={toggleTheme}
+          checked={title === "dark"}
+          checkedIcon={false}
+          uncheckedIcon={false}
+          height={10}
+          width={30}
+          handleDiameter={15}
+          offColor="#fff"
+          onColor="#000"
+        />
         <a target="_blank" href="https://github.com/carlos0406">
           <DiGithubBadge size={60} color="white" />
         </a>

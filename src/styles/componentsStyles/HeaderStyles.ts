@@ -5,7 +5,11 @@ export const Container = styled.header`
   align-items: center;
   justify-content: center;
   border-bottom: 1px solid black;
-  background: linear-gradient(to right, #003153 70%, #4169e1);
+  background: linear-gradient(
+    to right,
+    ${(props) => props.theme.colors.darkBlue} 70%,
+    ${(props) => props.theme.colors.lighBlue}
+  );
   height: 5rem;
 
   img {
