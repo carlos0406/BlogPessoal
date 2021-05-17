@@ -30,6 +30,7 @@ export default class MyDocument extends Document {
 
   render() {
     return (
+
       <Html lang="pt">
         <Head>
           <meta charSet="utf-8" />

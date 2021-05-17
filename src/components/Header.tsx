@@ -1,5 +1,5 @@
 import { Container } from "../styles/componentsStyles/HeaderStyles";
-import { FaLinkedinIn, FaCode } from "react-icons/fa";
+import { FaLinkedinIn } from "react-icons/fa";
 import { DiGithubBadge } from "react-icons/di";
 import Switch from "react-switch";
 import { useContext } from "react";
@@ -13,9 +13,10 @@ export function Header({ toggleTheme }: HeaderProps) {
   const { colors, title } = useContext(ThemeContext);
   return (
     <Container>
+
       <img src="https://github.com/carlos0406.png" alt="Nome da pessoa " />
-      <p className="vrau">MyProjectSpace</p>
-      <FaCode size={50} color="white" />
+      <p >MyProjectSpace</p>
+
 
       <div>
         <Switch

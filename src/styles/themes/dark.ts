@@ -1,9 +1,11 @@
 export default {
   title: "dark",
   colors: {
-    background: "#00223a",
-    darkBlue: "#003153",
-    lighBlue: "#4169e1",
+    background: "#191622",
+    primary: "#483C67",
+    secundary: "#988BC7",
+    bodyColor: "#6d79ac",
+    red: "#E96379",
     text: "#FFF",
   },
 };
